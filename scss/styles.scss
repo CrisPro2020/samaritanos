@@ -1,0 +1,14 @@
+@import "mixins";
+@import "variables";
+@import "globals";
+
+// Estilos del Homepage
+
+@import "header";
+@import "home/hero";
+@import "home/about";
+@import "home/help";
+@import "home/blog";
+@import "home/volunteer";
+@import "home/events";
+@import "footer";

@@ -1,0 +1,225 @@
+.events {
+    position: relative;
+    padding: 90px 0;
+
+    h6 {
+        color: $verde;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        text-align: center;
+        margin-bottom: 70px;
+    }
+
+    .swiper-container-2 {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .events-slide {
+        position: relative;
+
+        .card-event {
+            width: 100%;
+            max-width: 360px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            padding: 14px 14px 30px 14px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.03);
+
+            img {
+                width: 100%;
+                border-radius: 5px;
+            }
+
+            .category {
+                text-align: center;
+                width: max-content;
+                padding: 10px 24px;
+                border-radius: 3px;
+                background-color: $morado;
+                text-transform: uppercase;
+                color: white;
+                margin: auto;
+                margin-top: -20px;
+                margin-bottom: 20px;
+                font-size: $font-xs;
+            }
+
+            h3 {
+                font-size: $font-base;
+                font-weight: 600;
+                line-height: 1.3;
+                margin-bottom: 14px;
+            }
+
+            > p {
+                opacity: 0.7;
+                margin-bottom: 50px;
+            }
+
+            .progress-bar {
+                position: relative;
+
+                .percent-and-circle {
+                    position: absolute;
+                    top: -26px;
+                    z-index: 1;
+                    left: 81%;
+                    
+                    .percent {
+                        position: relative;
+                        width: max-content;
+                        text-align: center;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+
+                        span {
+                            font-size: $font-xs;
+                            margin-bottom: 4px;
+                        }
+
+                        .circle-progress {
+                            width: 16px;
+                            height: 16px;
+                            border: 2px solid white;
+                            border-radius: 50px;
+                            background-color: $verde;
+                            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+                        }
+                    }
+                }
+
+                .line-progress {
+                    position: relative;
+
+                    .line-base {
+                        display: block;
+                        width: 100%;
+                        height: 4px;
+                        background-color: #E5E5E5;
+                    }
+
+                    .progress {
+                        position: absolute;
+                        display: block;
+                        width: 85%;
+                        height: 4px;
+                        background-color: $verde;
+                    }
+                }
+            }
+
+            .money {
+                position: relative;
+                margin-top: 10px;
+                display: flex;
+                padding-top: 16px;
+
+                .meta {
+                    padding-right: 20px;
+                    border-right: 1px solid $alternative;
+
+                    span {
+                        display: block;
+                        font-size: 12px;
+                        color: $negro;
+                        margin-bottom: 6px;
+                    }
+
+                    p {
+                        color: $morado;
+                    }
+                }
+                
+                .donado {
+                    padding-left: 14px;
+                    padding-right: 20px;
+                    border-right: 1px solid $alternative;
+
+                    span {
+                        display: block;
+                        font-size: 12px;
+                        color: $negro;
+                        margin-bottom: 6px;
+                    }
+
+                    p {
+                        color: $morado;
+                    }
+                }
+                
+                .aun-falta {
+                    padding-left: 14px;
+
+                    span {
+                        display: block;
+                        font-size: 12px;
+                        color: $negro;
+                        margin-bottom: 6px;
+                    }
+
+                    p {
+                        color: $negro;
+                        opacity: 0.8;
+                    }
+                }
+            }
+        }
+    }
+
+    .swiper-buttons {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 60px;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        position: relative;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 20px;
+        border: 2px solid rgba(23, 44, 59, 0.5);
+        border-radius: 5px;
+        transition: all 0.3s ease;
+
+        &:hover {
+            border-color: $morado;
+            background-color: $morado;
+        }
+
+        &:hover::after {
+            color: white;
+        }
+    }
+
+    .swiper-button-prev {
+        margin-right: 10px;
+
+        
+
+        &:after {
+            font-size: 14px;
+            color: $negro;
+        }
+    }
+    
+    .swiper-button-next {
+        margin-left: 10px;
+        
+        &:after {
+            font-size: 14px;
+            color: $negro;
+        }
+    }
+}

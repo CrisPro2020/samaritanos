@@ -1,0 +1,219 @@
+.about-us {
+    position: inherit;
+    padding: 60px 0;
+    
+    .container {
+        text-align: center;
+    }
+
+    .container.title {
+        
+        h6 {
+            color: $verde;
+            margin-bottom: 20px;
+        }
+    
+        
+    }
+
+    .container.imgs {
+        margin-top: 50px;
+    
+        @include breakpoint-down(sm) {
+            padding: 0px 0px;
+        }
+
+        .first-icon,
+        .second-icon,
+        .third-icon,
+        .fourth-icon {
+            position: absolute;
+        }
+
+        .first-icon,
+        .second-icon,
+        .third-icon,
+        .fourth-icon {
+            @include breakpoint-down(md) {
+                width: 60px;
+            }
+
+            @include breakpoint-down(sm) {
+                width: 34px;
+            }
+        }
+
+        .first-icon {
+            top: 20%;
+            left: 0;
+
+            @include breakpoint-down(sm) {
+                top: 6%;
+                left: 3%;
+            }
+        }
+
+        .second-icon {
+            top: 12%;
+            left: 24%;
+
+            @include breakpoint-down(sm) {
+                top: -8%;
+            }
+        }
+
+        .third-icon {
+            top: 0%;
+            right: 36%;
+
+            @include breakpoint-down(sm) {
+                top: -6%;
+            }
+        }
+
+        .fourth-icon {
+            top: 14%;
+            right: 3%;
+
+            @include breakpoint-down(lg) {
+                right: 0%;
+            } 
+
+            @include breakpoint-down(sm) {
+                top: -11%;
+                right: 3%;
+            }
+        }
+
+        .team-samaritanos {
+            max-width: 996px;
+            width: 100%;
+            margin-top: 50px;
+            
+            @include breakpoint-down(sm) {
+                display: none;
+            }
+        }
+        
+        .team-samaritanos-min {
+            position: relative;
+            display: none;
+            width: 100%;
+            max-width: 640px;
+            
+            @include breakpoint-down(sm) {
+                display: block;
+                margin-top: 120px;
+                width: 100%;
+            }
+        }
+
+        .lines {
+            position: absolute;
+            top: 28%;
+            right: -20px;
+            z-index: -1;
+
+            @include breakpoint-down(lg) {
+                right: -10%;
+            }
+
+            @include breakpoint-down(sm) {
+                display: none;
+            }
+        }
+
+        .team-bolitas {
+            position: absolute;
+            left: 3%;
+            bottom: 0%;
+
+            @include breakpoint-down(lg) {
+                left: -5%;
+            }
+            @include breakpoint-down(md) {
+                left: -10%;
+                bottom: 10%;
+            }
+            @include breakpoint-down(sm) {
+                display: none;
+            }
+
+        }
+    }
+    
+    .container.counters {
+
+        .contadores {
+            position: relative;
+            width: 100%;
+            max-width: 996px;
+            margin: 0 auto;
+            margin-top: -40px;
+            position: relative;
+            display: flex;
+            justify-content: flex-end;
+    
+            @include breakpoint-down(sm) {
+                margin-top: 0px;
+            }
+            
+            &-items {
+                width: 840px;
+                background-color: rgba(107, 98, 172, 0.1);
+                display: flex;
+                flex-wrap: nowrap;
+
+                @include breakpoint-down(sm) {
+                    flex-wrap: wrap;
+                }
+    
+                > div {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    padding: 18px 0px 18px 30px;
+    
+                    @include breakpoint-down(md) {
+                        padding-top: 26px;
+                        padding-left: 20px;
+                    }
+    
+                    @include breakpoint-down(sm) {
+                        width: 50%;
+                        padding: 20px 30px;
+                        padding-right: 10px;
+                    }
+    
+                    &:last-child {
+                        @include breakpoint-down(md) {
+                            padding-right: 20px;
+                        }
+                    }
+    
+                    .number {
+                        margin-bottom: 4px;
+    
+                        span {
+                            font-size: $font-4xl;
+                            font-weight: 500;
+                            color: $morado;
+                        }
+                    }
+    
+                    .description {
+    
+                        p {
+                            text-align: left;
+                            font-size: $font-sm;
+                        }
+                    }
+                }
+            }
+        }
+    
+        @include breakpoint-down(sm) {
+            padding: 0px 0px;
+        }
+    }
+}
